@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+::after,
+::before {
+  margin-top: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--default-bg);
+  font-family: var(--primary-ft);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: var(--txt-clr);
+}
+@media (min-width: 43.75em) {
+  body {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+
+h1 {
+  font-family: var(--accent-ft);
+  font-weight: inherit;
+  font-size: 5rem;
+  line-height: 6.25rem;
+}
+
+.eyebrow {
+  font-family: var(--secondary-ft);
+  font-weight: inherit;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  letter-spacing: 2.7px;
+}
+@media (min-width: 43.75em) {
+  .eyebrow {
+    font-size: 1.25rem;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+:root {
+  --default-bg: hsl(230, 35%, 7%);
+  --txt-clr: hsl(231, 77%, 90%);
+  --white: hsl(0, 0%, 100%);
+  --dark-grd: linear-gradient(hsla(234, 28%, 7%, 0.2), hsla(234, 28%, 7%, 0.2));
+  --primary-ft: "Barlow", sans-serif;
+  --secondary-ft: "Barlow Condensed", sans-serif;
+  --accent-ft: "Bellefair", serif;
+  --home-mobile: var(--dark-grd), url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
+  --home-tablet: var(--dark-grd), url("../assets/home/background-home-tablet.jpg") center/cover no-repeat;
+  --home-desktop: var(--dark-grd), url("../assets/home/background-home-desktop.jpg") center/cover no-repeat;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+@media (min-width: 59.375em) {
+  .container {
+    max-width: 90em;
+  }
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app {
+  position: relative;
+}/*# sourceMappingURL=style.css.map */

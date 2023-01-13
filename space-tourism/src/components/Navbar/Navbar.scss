@@ -1,0 +1,28 @@
+@use '../../scss/util' as u;
+
+.navbar {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translate(-50%);
+
+    @include u.breakpoint('medium'){
+        top: 64px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .logo {
+        width: 40px;
+
+        @include u.breakpoint('large'){
+            width: 48px;
+        }
+    }
+
+    .menu {
+        width: 24px;
+    }
+}

@@ -1,0 +1,15 @@
+:root {
+    --default-bg: hsl(230, 35%, 7%);
+    --txt-clr: hsl(231, 77%, 90%);
+    --white: hsl(0, 0%, 100%);
+
+    --dark-grd: linear-gradient(hsla(234, 28%, 7%, 0.2), hsla(234, 28%, 7%, 0.2));
+
+    --primary-ft: 'Barlow', sans-serif;
+    --secondary-ft: 'Barlow Condensed', sans-serif;
+    --accent-ft: 'Bellefair', serif;
+
+    --home-mobile: var(--dark-grd), url('../assets/home/background-home-mobile.jpg') center/cover no-repeat;
+    --home-tablet: var(--dark-grd), url('../assets/home/background-home-tablet.jpg') center/cover no-repeat;
+    --home-desktop: var(--dark-grd), url('../assets/home/background-home-desktop.jpg') center/cover no-repeat;
+}

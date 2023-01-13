@@ -1,0 +1,24 @@
+@use '../util' as u;
+
+h1 {
+    font-family: var(--accent-ft);
+    font-weight: inherit;
+    font-size: u.toRem(80);
+    line-height: u.toRem(100);
+}
+
+.eyebrow {
+    font-family: var(--secondary-ft);
+    font-weight: inherit;
+    font-size: u.toRem(16);
+    line-height: u.toRem(19);
+    letter-spacing: 2.7px;
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(20);
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

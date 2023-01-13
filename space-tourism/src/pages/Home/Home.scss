@@ -1,0 +1,97 @@
+@use '../../scss/util' as u;
+
+.home {
+    min-height: 100vh;
+    padding: u.toRem(112) 0 u.toRem(48);
+    background: var(--home-mobile);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__content{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: u.toRem(81);
+
+        &__txt {
+            h1 {
+                color: var(--white);
+            }
+    
+            .eyebrow, h1 {
+                margin-bottom: u.toRem(16);
+            }
+    
+            p {
+                margin-bottom: 0;
+            }
+        }
+        
+        .idk {
+            font-family: var(--seconadry-ft);
+            font-size: u.toRem(20);
+            line-height: u.toRem(22.92);
+            letter-spacing: 1.25px;
+            padding: u.toRem(68) u.toRem(27) u.toRem(59) u.toRem(29);
+            background-color: var(--white);
+            border-radius: 50%;
+            color: #0B0D17;
+        }
+    }
+
+
+    @include u.breakpoint('medium') {
+        background: var(--home-tablet);
+        padding: u.toRem(202) 0 u.toRem(90);
+
+        &__content {
+            row-gap: u.toRem(156);
+            &__txt{
+                .eyebrow, h1 {
+                    margin-bottom: u.toRem(24);
+                }
+        
+                p {
+                    width: u.toRem(444);
+                    margin: 0 auto;
+                }
+            }
+    
+            .idk {
+                font-size: u.toRem(32);
+                line-height: u.toRem(36.67);
+                letter-spacing: 2px;
+                padding: u.toRem(103) u.toRem(48) u.toRem(102) u.toRem(46);
+            }
+        }
+    }
+
+    @include u.breakpoint('large') {
+        padding-bottom: u.toRem(131);
+        background: var(--home-desktop);
+        justify-content: flex-end;
+
+        &__content {
+            flex-direction: row;
+            justify-content: space-between;
+            row-gap: u.toRem(380);
+
+            &__txt {
+                text-align: left;
+                width: u.toRem(450);
+            }
+    
+            .idk {
+                font-size: u.toRem(32);
+                line-height: u.toRem(36.67);
+                letter-spacing: 2px;
+                padding: u.toRem(103) u.toRem(48) u.toRem(102) u.toRem(46);
+            }
+        }
+    }
+}

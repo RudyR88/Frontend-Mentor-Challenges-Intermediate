@@ -1,0 +1,30 @@
+@use '../util' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+::after,
+::before {
+    margin-top: 0;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: var(--default-bg);
+    font-family: var(--primary-ft);
+    font-weight: 400;
+    font-size: u.toRem(15);
+    line-height: u.toRem(25);
+    color: var(--txt-clr);
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(16);
+        line-height: u.toRem(28);
+    }
+}

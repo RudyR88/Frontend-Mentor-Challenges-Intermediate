@@ -1,0 +1,25 @@
+.navbar {
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (min-width: 43.75em) {
+  .navbar {
+    top: 64px;
+  }
+}
+.navbar a {
+  text-decoration: none;
+}
+.navbar .logo {
+  width: 40px;
+}
+@media (min-width: 59.375em) {
+  .navbar .logo {
+    width: 48px;
+  }
+}
+.navbar .menu {
+  width: 24px;
+}/*# sourceMappingURL=Navbar.css.map */
