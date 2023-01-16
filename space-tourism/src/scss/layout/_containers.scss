@@ -3,12 +3,5 @@
 .container {
     width: 85%;
     margin: 0 auto;
-
-    // @include u.breakpoint('medium'){
-    //     max-width: u.toEm(768);
-    // }
-
-    @include u.breakpoint('large'){
-        max-width: u.toEm(1440);
-    }
+    max-width: u.toEm(1440);
 }

@@ -57,7 +57,7 @@
     padding: 6.4375rem 3rem 6.375rem 2.875rem;
   }
 }
-@media (min-width: 59.375em) {
+@media (min-width: 81.125em) {
   .home {
     padding-bottom: 8.1875rem;
     background: var(--home-desktop);

@@ -1,0 +1,74 @@
+@use '../../scss/util' as u;
+
+.navlinks {
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: var(--white);
+        font-family: var(--secondary-ft);
+        font-size: u.toRem(16);
+        line-height: u.toRem(19.2);
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+
+        li + li {
+            margin-top: u.toRem(32)
+        }
+    
+        span {
+            font-weight: 700;
+            line-height: u.toRem(19);
+            margin-right: u.toRem(11);
+        }
+    
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            color: inherit;
+        }
+    }
+
+
+    @include u.breakpoint('medium'){
+
+        ul {
+            display: flex;
+            align-items: center;
+            font-size: u.toRem(14);
+            line-height: u.toRem(16.8);
+            letter-spacing: 2.36px;
+
+            li + li {
+                margin-top: unset;
+                margin-left: u.toRem(37);
+            }
+    
+            span {
+                display: none;
+            }
+    
+            a {
+                padding-bottom: u.toRem(35);
+    
+                &:hover {
+                    border-bottom: 3px solid var(--white);
+                }
+            }
+        }
+
+    }
+
+    @include u.breakpoint('large'){
+        ul {
+            font-size: u.toRem(16);
+            line-height: u.toRem(19.2);
+            letter-spacing: 2.7px;
+
+            span {
+                display: inline;
+            }
+        }
+    }
+}

@@ -10,28 +10,4 @@
     backdrop-filter: blur(40.7742px);
     padding: u.toRem(118) u.toRem(26);
     z-index: 10;
-
-    ul {
-        list-style: none;
-        color: var(--white);
-        font-family: var(--secondary-ft);
-        font-size: u.toRem(16);
-        letter-spacing: 2.7px;
-
-        span {
-            font-weight: 700;
-            line-height: u.toRem(19);
-            margin-right: u.toRem(11);
-        }
-
-        li + li {
-            margin-top: u.toRem(32)
-        }
-
-        a {
-            text-decoration: none;
-            font-weight: 400;
-            color: inherit;
-        }
-    }
 }

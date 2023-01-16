@@ -1,15 +1,14 @@
 @use '../../scss/util' as u;
 
-.navbar {
+.header {
     position: absolute;
+    width: 85%;
+    margin: 0 auto;
+    max-width: u.toEm(1440);
     top: 24px;
     left: 50%;
     transform: translate(-50%);
     z-index: 100;
-
-    @include u.breakpoint('medium'){
-        top: 64px;
-    }
 
     a {
         text-decoration: none;
@@ -17,13 +16,72 @@
 
     .logo {
         width: 40px;
+    }
 
-        @include u.breakpoint('large'){
-            width: 48px;
-        }
+    .decor {
+        display: none;
+        position: absolute;
+        margin: 0;
+        left: u.toRem(112);
+        background-color: var(--white);
+        height: 1px;
+        border: none;
+        width: 35%;
+        max-width: u.toRem(473);
+        opacity: .25;
+        z-index: 150;
     }
 
     .menu {
         width: 24px;
+    }
+
+    .nav-links {
+        display: none;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        padding: u.toRem(39) u.toRem(46) u.toRem(39) u.toRem(48);
+    }
+
+    @include u.breakpoint('medium'){
+        width: 95%;
+        top: 0;
+        left: unset;
+        transform: unset;
+        right: 0;
+
+        .menu {
+            display: none;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+    }
+
+    @include u.breakpoint('large'){
+        top: u.toRem(40);
+
+        .nav-links {
+            padding: u.toRem(39) u.toRem(165) u.toRem(38) u.toRem(123);
+        }
+
+        .logo {
+            width: 48px;
+        }
+
+        .decor {
+            display: inline;
+        }
+    }
+
+    @include u.breakpoint('x-large'){
+        right: unset;
+        left: 50%;
+        transform: translate(-50%);
+
+        .decor {
+            left: u.toRem(190);
+        }
     }
 }
