@@ -23,7 +23,7 @@
                 color: var(--white);
             }
     
-            .eyebrow, h1 {
+            h1, h5 {
                 margin-bottom: u.toRem(16);
             }
     
@@ -32,7 +32,7 @@
             }
         }
         
-        .idk {
+        .explore {
             font-family: var(--seconadry-ft);
             font-size: u.toRem(20);
             line-height: u.toRem(22.92);
@@ -40,6 +40,7 @@
             padding: u.toRem(68) u.toRem(27) u.toRem(59) u.toRem(29);
             background-color: var(--white);
             border-radius: 50%;
+            text-decoration: none;
             color: #0B0D17;
         }
     }
@@ -52,7 +53,7 @@
         &__content {
             row-gap: u.toRem(156);
             &__txt{
-                .eyebrow, h1 {
+                h1, h5 {
                     margin-bottom: u.toRem(24);
                 }
         
@@ -62,7 +63,7 @@
                 }
             }
     
-            .idk {
+            .explore {
                 font-size: u.toRem(32);
                 line-height: u.toRem(36.67);
                 letter-spacing: 2px;
@@ -86,7 +87,7 @@
                 width: u.toRem(450);
             }
     
-            .idk {
+            .explore {
                 font-size: u.toRem(32);
                 line-height: u.toRem(36.67);
                 letter-spacing: 2px;

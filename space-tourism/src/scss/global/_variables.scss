@@ -2,6 +2,7 @@
     --default-bg: hsl(230, 35%, 7%);
     --txt-clr: hsl(231, 77%, 90%);
     --white: hsl(0, 0%, 100%);
+    --white-hov: hsla(0, 0%, 100%, 0.3);
     --mm-bg: rgba(255, 255, 255, 0.04);
 
     --dark-grd: linear-gradient(hsla(234, 28%, 7%, 0.2), hsla(234, 28%, 7%, 0.2));
@@ -13,4 +14,8 @@
     --home-mobile: var(--dark-grd), url('../assets/home/background-home-mobile.jpg') center/cover no-repeat;
     --home-tablet: var(--dark-grd), url('../assets/home/background-home-tablet.jpg') center/cover no-repeat;
     --home-desktop: var(--dark-grd), url('../assets/home/background-home-desktop.jpg') center/cover no-repeat;
+
+    --dest-mobile: var(--dark-grd), url('../assets/destination/background-destination-mobile.jpg') center/cover no-repeat;
+    --dest-tablet: var(--dark-grd), url('../assets/destination/background-destination-tablet.jpg') center/cover no-repeat;
+    --dest-desktop: var(--dark-grd), url('../assets/destination/background-destination-desktop.jpg') center/cover no-repeat;
 }

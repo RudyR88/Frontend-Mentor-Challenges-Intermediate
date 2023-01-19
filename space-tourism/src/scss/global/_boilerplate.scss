@@ -27,4 +27,9 @@ body {
         font-size: u.toRem(16);
         line-height: u.toRem(28);
     }
+
+    @include u.breakpoint('large'){
+        font-size: u.toRem(18);
+        line-height: u.toRem(32);
+    }
 }

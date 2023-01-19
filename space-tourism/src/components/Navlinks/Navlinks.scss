@@ -53,6 +53,10 @@
                 padding-bottom: u.toRem(35);
     
                 &:hover {
+                    border-bottom: 3px solid var(--white-hov);
+                }
+
+                &.active{
                     border-bottom: 3px solid var(--white);
                 }
             }

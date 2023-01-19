@@ -41,6 +41,9 @@
     padding-bottom: 2.1875rem;
   }
   .navlinks ul a:hover {
+    border-bottom: 3px solid var(--white-hov);
+  }
+  .navlinks ul a.active {
     border-bottom: 3px solid var(--white);
   }
 }

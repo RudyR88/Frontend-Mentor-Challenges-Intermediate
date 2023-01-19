@@ -19,13 +19,13 @@
 .home__content__txt h1 {
   color: var(--white);
 }
-.home__content__txt .eyebrow, .home__content__txt h1 {
+.home__content__txt h1, .home__content__txt h5 {
   margin-bottom: 1rem;
 }
 .home__content__txt p {
   margin-bottom: 0;
 }
-.home__content .idk {
+.home__content .explore {
   font-family: var(--seconadry-ft);
   font-size: 1.25rem;
   line-height: 1.4325rem;
@@ -33,6 +33,7 @@
   padding: 4.25rem 1.6875rem 3.6875rem 1.8125rem;
   background-color: var(--white);
   border-radius: 50%;
+  text-decoration: none;
   color: #0B0D17;
 }
 @media (min-width: 43.75em) {
@@ -43,14 +44,14 @@
   .home__content {
     row-gap: 9.75rem;
   }
-  .home__content__txt .eyebrow, .home__content__txt h1 {
+  .home__content__txt h1, .home__content__txt h5 {
     margin-bottom: 1.5rem;
   }
   .home__content__txt p {
     width: 27.75rem;
     margin: 0 auto;
   }
-  .home__content .idk {
+  .home__content .explore {
     font-size: 2rem;
     line-height: 2.291875rem;
     letter-spacing: 2px;
@@ -72,7 +73,7 @@
     text-align: left;
     width: 28.125rem;
   }
-  .home__content .idk {
+  .home__content .explore {
     font-size: 2rem;
     line-height: 2.291875rem;
     letter-spacing: 2px;

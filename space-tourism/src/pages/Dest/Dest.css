@@ -1,0 +1,21 @@
+.dest {
+  min-height: 100vh;
+  padding: 5.5rem 0 3.625rem;
+  background: var(--dest-mobile);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 43.75em) {
+  .dest {
+    background: var(--dest-tablet);
+    padding: 12.625rem 0 5.625rem;
+  }
+}
+@media (min-width: 81.125em) {
+  .dest {
+    padding-bottom: 8.1875rem;
+    background: var(--dest-desktop);
+  }
+}/*# sourceMappingURL=Dest.css.map */

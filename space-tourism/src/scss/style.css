@@ -27,6 +27,12 @@ body {
     line-height: 1.75rem;
   }
 }
+@media (min-width: 81.125em) {
+  body {
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+}
 
 h1 {
   font-family: var(--accent-ft);
@@ -34,8 +40,19 @@ h1 {
   font-size: 5rem;
   line-height: 6.25rem;
 }
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 9.375rem;
+    line-height: 9.375rem;
+  }
+}
+@media (min-width: 81.125em) {
+  h1 {
+    line-height: 10.74375rem;
+  }
+}
 
-.eyebrow {
+h5 {
   font-family: var(--secondary-ft);
   font-weight: inherit;
   font-size: 1rem;
@@ -43,8 +60,17 @@ h1 {
   letter-spacing: 2.7px;
 }
 @media (min-width: 43.75em) {
-  .eyebrow {
+  h5 {
     font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 3.38px;
+  }
+}
+@media (min-width: 81.125em) {
+  h5 {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+    letter-spacing: 4.72px;
   }
 }
 
@@ -56,6 +82,7 @@ h1 {
   --default-bg: hsl(230, 35%, 7%);
   --txt-clr: hsl(231, 77%, 90%);
   --white: hsl(0, 0%, 100%);
+  --white-hov: hsla(0, 0%, 100%, 0.3);
   --mm-bg: rgba(255, 255, 255, 0.04);
   --dark-grd: linear-gradient(hsla(234, 28%, 7%, 0.2), hsla(234, 28%, 7%, 0.2));
   --primary-ft: "Barlow", sans-serif;
@@ -64,16 +91,15 @@ h1 {
   --home-mobile: var(--dark-grd), url("../assets/home/background-home-mobile.jpg") center/cover no-repeat;
   --home-tablet: var(--dark-grd), url("../assets/home/background-home-tablet.jpg") center/cover no-repeat;
   --home-desktop: var(--dark-grd), url("../assets/home/background-home-desktop.jpg") center/cover no-repeat;
+  --dest-mobile: var(--dark-grd), url("../assets/destination/background-destination-mobile.jpg") center/cover no-repeat;
+  --dest-tablet: var(--dark-grd), url("../assets/destination/background-destination-tablet.jpg") center/cover no-repeat;
+  --dest-desktop: var(--dark-grd), url("../assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
 }
 
 .container {
   width: 85%;
   margin: 0 auto;
-}
-@media (min-width: 59.375em) {
-  .container {
-    max-width: 90em;
-  }
+  max-width: 90em;
 }
 
 .flex-between {

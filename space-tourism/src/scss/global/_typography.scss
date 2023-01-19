@@ -5,9 +5,18 @@ h1 {
     font-weight: inherit;
     font-size: u.toRem(80);
     line-height: u.toRem(100);
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(150);
+        line-height: u.toRem(150);
+    }
+
+    @include u.breakpoint('large'){
+        line-height: u.toRem(171.9);
+    }
 }
 
-.eyebrow {
+h5 {
     font-family: var(--secondary-ft);
     font-weight: inherit;
     font-size: u.toRem(16);
@@ -16,6 +25,14 @@ h1 {
 
     @include u.breakpoint('medium'){
         font-size: u.toRem(20);
+        line-height: u.toRem(24);
+        letter-spacing: 3.38px;
+    }
+
+    @include u.breakpoint('large'){
+        font-size: u.toRem(28);
+        line-height: u.toRem(33.6);
+        letter-spacing: 4.72px;
     }
 }
 
