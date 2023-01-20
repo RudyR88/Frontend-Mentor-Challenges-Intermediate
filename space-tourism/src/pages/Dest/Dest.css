@@ -7,15 +7,124 @@
   align-items: center;
   justify-content: center;
 }
+.dest__content {
+  text-align: center;
+  margin: 0 auto;
+}
+.dest__content h2 {
+  color: var(--white);
+  margin-bottom: 0.0625rem;
+}
+.dest__content h5 {
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+.dest__content .numb {
+  font-weight: 700;
+  opacity: 0.25;
+  margin-right: 1.125rem;
+  letter-spacing: inherit;
+}
+.dest__content img {
+  display: block;
+  width: 10.625rem;
+  margin: 0 auto;
+  margin-bottom: 1.625rem;
+}
+.dest__content .tabs {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.dest__content p {
+  margin-bottom: 2rem;
+}
+.dest__content hr {
+  border: none;
+  height: 1px;
+  background-color: var(--hr-clr);
+  margin-bottom: 2rem;
+}
+.dest__content .subheading2 {
+  margin-bottom: 0.75rem;
+}
+.dest__content .subheading1 {
+  color: var(--white);
+}
+.dest__content__stat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
 @media (min-width: 43.75em) {
   .dest {
     background: var(--dest-tablet);
-    padding: 12.625rem 0 5.625rem;
+    padding: 8.5rem 0 3.875rem;
+  }
+  .dest__content h2 {
+    margin-bottom: 0.5rem;
+  }
+  .dest__content h5 {
+    margin-bottom: 3.75rem;
+  }
+  .dest__content img {
+    width: 28.5625rem;
+    margin-bottom: 3.3125rem;
+  }
+  .dest__content .tabs {
+    width: 17.8125rem;
+    margin-bottom: 2rem;
+  }
+  .dest__content p {
+    width: 35.8125rem;
+    margin: 0 auto;
+    margin-bottom: 3.0625rem;
+  }
+  .dest__content hr {
+    margin-bottom: 1.75rem;
+  }
+  .dest__content__stat {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 @media (min-width: 81.125em) {
   .dest {
-    padding-bottom: 8.1875rem;
+    padding: 13.25rem 0 7.375rem;
     background: var(--dest-desktop);
+  }
+  .dest__content {
+    text-align: left;
+  }
+  .dest__content__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dest__content__item h2 {
+    margin-bottom: 0.875rem;
+  }
+  .dest__content__item h5 {
+    margin-bottom: 4rem;
+  }
+  .dest__content__item img {
+    width: 27.8125rem;
+    margin: 0;
+  }
+  .dest__content__item .tabs {
+    margin: 0 0 2.3125rem 0;
+  }
+  .dest__content__item p {
+    margin: 0;
+    margin-bottom: 3.375rem;
+    width: 27.75rem;
+  }
+  .dest__content__stat {
+    justify-content: flex-start;
+    gap: 4.25rem;
   }
 }/*# sourceMappingURL=Dest.css.map */

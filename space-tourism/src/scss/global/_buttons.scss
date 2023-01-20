@@ -1,0 +1,17 @@
+@use '../util' as u;
+
+.btn {
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+
+    &__transparent{
+        border: none;
+        background-color: transparent;
+        border-bottom: 3px solid transparent;
+        
+        &:hover {
+            border-bottom: 3px solid var(--white-hov);
+        }
+    }
+}

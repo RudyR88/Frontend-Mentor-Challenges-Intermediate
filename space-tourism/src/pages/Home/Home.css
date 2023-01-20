@@ -56,6 +56,10 @@
     line-height: 2.291875rem;
     letter-spacing: 2px;
     padding: 6.4375rem 3rem 6.375rem 2.875rem;
+    transition: outline 0.3s ease-in-out;
+  }
+  .home__content .explore:hover, .home__content .explore:focus {
+    outline: solid 5.5rem var(--white-hov);
   }
 }
 @media (min-width: 81.125em) {

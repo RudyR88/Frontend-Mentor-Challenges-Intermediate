@@ -1,0 +1,15 @@
+@use '../../scss/util' as u;
+
+.planet-tab {
+    font-size: u.toRem(14);
+    line-height: u.toRem(16.8);
+    letter-spacing: u.toRem(2.36);
+    border-bottom: 3px solid transparent;
+    padding: 0 0 u.toRem(12) 0;
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(16);
+        line-height: u.toRem(19.2);
+        letter-spacing: u.toRem(2.7);
+    }
+}

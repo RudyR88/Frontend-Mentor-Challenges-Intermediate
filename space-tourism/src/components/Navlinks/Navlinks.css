@@ -40,7 +40,8 @@
   .navlinks ul a {
     padding-bottom: 2.1875rem;
   }
-  .navlinks ul a:hover {
+  .navlinks ul a:hover, .navlinks ul a:focus {
+    outline: none;
     border-bottom: 3px solid var(--white-hov);
   }
   .navlinks ul a.active {

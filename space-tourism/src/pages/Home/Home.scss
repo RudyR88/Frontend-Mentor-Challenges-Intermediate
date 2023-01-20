@@ -68,6 +68,11 @@
                 line-height: u.toRem(36.67);
                 letter-spacing: 2px;
                 padding: u.toRem(103) u.toRem(48) u.toRem(102) u.toRem(46);
+                transition: outline .3s ease-in-out;
+                
+                &:hover, &:focus {
+                    outline: solid u.toRem(88) var(--white-hov);
+                }
             }
         }
     }

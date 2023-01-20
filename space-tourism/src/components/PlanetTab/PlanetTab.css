@@ -1,0 +1,14 @@
+.planet-tab {
+  font-size: 0.875rem;
+  line-height: 1.05rem;
+  letter-spacing: 0.1475rem;
+  border-bottom: 3px solid transparent;
+  padding: 0 0 0.75rem 0;
+}
+@media (min-width: 43.75em) {
+  .planet-tab {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.16875rem;
+  }
+}/*# sourceMappingURL=PlanetTab.css.map */

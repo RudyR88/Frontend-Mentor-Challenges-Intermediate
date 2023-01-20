@@ -34,8 +34,21 @@ body {
   }
 }
 
+.btn {
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+.btn__transparent {
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid transparent;
+}
+.btn__transparent:hover {
+  border-bottom: 3px solid var(--white-hov);
+}
+
 h1 {
-  font-family: var(--accent-ft);
   font-weight: inherit;
   font-size: 5rem;
   line-height: 6.25rem;
@@ -49,6 +62,24 @@ h1 {
 @media (min-width: 81.125em) {
   h1 {
     line-height: 10.74375rem;
+  }
+}
+
+h2 {
+  font-weight: inherit;
+  font-size: 3.5rem;
+  line-height: 4.01125rem;
+}
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 5rem;
+    line-height: 5.73rem;
+  }
+}
+@media (min-width: 81.125em) {
+  h2 {
+    font-size: 6.25rem;
+    line-height: 7.1625rem;
   }
 }
 
@@ -74,6 +105,20 @@ h5 {
   }
 }
 
+.subheading1 {
+  font-size: 1.75rem;
+}
+
+.subheading2 {
+  font-family: var(--secondary-ft);
+  font-size: 0.875rem;
+  letter-spacing: 2.35px;
+}
+
+h1, h2, .subheading1 {
+  font-family: var(--accent-ft);
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -84,6 +129,7 @@ h5 {
   --white: hsl(0, 0%, 100%);
   --white-hov: hsla(0, 0%, 100%, 0.3);
   --mm-bg: rgba(255, 255, 255, 0.04);
+  --hr-clr: hsl(231, 15%, 26%);
   --dark-grd: linear-gradient(hsla(234, 28%, 7%, 0.2), hsla(234, 28%, 7%, 0.2));
   --primary-ft: "Barlow", sans-serif;
   --secondary-ft: "Barlow Condensed", sans-serif;
@@ -106,6 +152,12 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .app {
