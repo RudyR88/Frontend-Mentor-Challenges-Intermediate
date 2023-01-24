@@ -48,6 +48,39 @@ body {
   border-bottom: 3px solid var(--white-hov);
 }
 
+.numb {
+  font-weight: 700;
+  opacity: 0.25;
+  margin-right: 1.125rem;
+  letter-spacing: inherit;
+}
+
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0.17;
+}
+@media (min-width: 81.125em) {
+  .dot {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+img {
+  pointer-events: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--hr-clr);
+  margin-bottom: 2rem;
+}
+
 h1 {
   font-weight: inherit;
   font-size: 5rem;
@@ -83,8 +116,19 @@ h2 {
   }
 }
 
+h4 {
+  font-weight: inherit;
+  font-size: 1.5rem;
+  line-height: 1.71875rem;
+}
+@media (min-width: 81.125em) {
+  h4 {
+    font-size: 2rem;
+    line-height: 2.291875rem;
+  }
+}
+
 h5 {
-  font-family: var(--secondary-ft);
   font-weight: inherit;
   font-size: 1rem;
   line-height: 1.1875rem;
@@ -110,13 +154,24 @@ h5 {
 }
 
 .subheading2 {
-  font-family: var(--secondary-ft);
   font-size: 0.875rem;
   letter-spacing: 2.35px;
 }
 
-h1, h2, .subheading1 {
+.eyebrow {
+  display: block;
+  font-family: var(--acent-ft);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.14625rem;
+}
+
+h1, h2, h4, .subheading1, .eyebrow {
   font-family: var(--accent-ft);
+}
+
+h5, .subheading2 {
+  font-family: var(--secondary-ft);
 }
 
 .uppercase {
@@ -140,6 +195,9 @@ h1, h2, .subheading1 {
   --dest-mobile: var(--dark-grd), url("../assets/destination/background-destination-mobile.jpg") center/cover no-repeat;
   --dest-tablet: var(--dark-grd), url("../assets/destination/background-destination-tablet.jpg") center/cover no-repeat;
   --dest-desktop: var(--dark-grd), url("../assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
+  --crew-mobile: var(--dark-grd), url("../assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
+  --crew-tablet: var(--dark-grd), url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
+  --crew-desktop: var(--dark-grd), url("../assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
 }
 
 .container {

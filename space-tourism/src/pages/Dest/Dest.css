@@ -16,15 +16,8 @@
   margin-bottom: 0.0625rem;
 }
 .dest__content h5 {
-  text-transform: uppercase;
   color: var(--white);
   margin-bottom: 2rem;
-}
-.dest__content .numb {
-  font-weight: 700;
-  opacity: 0.25;
-  margin-right: 1.125rem;
-  letter-spacing: inherit;
 }
 .dest__content img {
   display: block;
@@ -40,12 +33,6 @@
   margin-bottom: 1.25rem;
 }
 .dest__content p {
-  margin-bottom: 2rem;
-}
-.dest__content hr {
-  border: none;
-  height: 1px;
-  background-color: var(--hr-clr);
   margin-bottom: 2rem;
 }
 .dest__content .subheading2 {

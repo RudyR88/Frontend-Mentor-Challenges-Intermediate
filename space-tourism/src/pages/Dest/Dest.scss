@@ -19,16 +19,8 @@
         }
     
         h5 {
-            text-transform: uppercase;
             color: var(--white);
             margin-bottom: u.toRem(32);
-        }
-    
-        .numb{
-            font-weight: 700;
-            opacity: .25;
-            margin-right: u.toRem(18);
-            letter-spacing: inherit;
         }
     
         img {
@@ -47,13 +39,6 @@
         }
 
         p {
-            margin-bottom: u.toRem(32);
-        }
-
-        hr {
-            border: none;
-            height: 1px;
-            background-color: var(--hr-clr);
             margin-bottom: u.toRem(32);
         }
     

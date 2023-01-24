@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Dest from './pages/Dest/Dest';
+import Crew from './pages/Crew/Crew';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />}/>
           <Route path='/destination' element={<Dest />}/>
+          <Route path='/crew' element={<Crew />}/>
         </Routes>
         {toggled && <MobileMenu />}
       </Router>

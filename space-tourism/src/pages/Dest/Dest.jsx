@@ -18,7 +18,7 @@ export default function Dest() {
   return (
     <div className='dest'>
         <main className='dest__content container'>
-            <h5><span className='numb'>01</span>pick your destination</h5>
+            <h5 className='uppercase'><span className='numb'>01</span>pick your destination</h5>
             <div className='dest__content__item'>
               <img src={images.png} alt='' aria-hidden='true'/>
               <div>
