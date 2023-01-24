@@ -75,6 +75,7 @@ img {
 }
 
 hr {
+  width: 100%;
   border: none;
   height: 1px;
   background-color: var(--hr-clr);
@@ -121,6 +122,12 @@ h4 {
   font-size: 1.5rem;
   line-height: 1.71875rem;
 }
+@media (min-width: 43.75em) {
+  h4 {
+    font-size: 2.5rem;
+    line-height: 2.865rem;
+  }
+}
 @media (min-width: 81.125em) {
   h4 {
     font-size: 2rem;
@@ -164,6 +171,12 @@ h5 {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.14625rem;
+}
+@media (min-width: 43.75em) {
+  .eyebrow {
+    font-size: 1.5rem;
+    line-height: 1.71875rem;
+  }
 }
 
 h1, h2, h4, .subheading1, .eyebrow {

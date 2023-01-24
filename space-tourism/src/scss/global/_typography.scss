@@ -36,6 +36,11 @@ h4 {
     font-size: u.toRem(24);
     line-height: u.toRem(27.5);
 
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(40);
+        line-height: u.toRem(45.84);
+    }
+
     @include u.breakpoint('large'){
         font-size: u.toRem(32);
         line-height: u.toRem(36.67);
@@ -76,6 +81,11 @@ h5 {
     font-weight: 400;
     font-size: u.toRem(16);
     line-height: u.toRem(18.34);
+
+    @include u.breakpoint('medium'){
+        font-size: u.toRem(24);
+        line-height: u.toRem(27.5);
+    }
 }
 
 h1, h2, h4, .subheading1, .eyebrow {

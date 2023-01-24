@@ -35,6 +35,9 @@
 .dest__content p {
   margin-bottom: 2rem;
 }
+.dest__content hr {
+  width: 100%;
+}
 .dest__content .subheading2 {
   margin-bottom: 0.75rem;
 }
