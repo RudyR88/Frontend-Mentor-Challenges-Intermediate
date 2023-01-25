@@ -1,0 +1,20 @@
+@use '../../scss/util' as u;
+
+.tech-btn {
+    cursor: pointer;
+    font-weight: 400;
+    font-family: var(--accent-ft);
+    font-size: u.toRem(16);
+    line-height: u.toRem(18.34);
+    letter-spacing: 1px;
+    padding: u.toRem(11) u.toRem(16);
+    color: var(--white);
+    background-color: transparent;
+    border: solid 1px var(--white-hov);
+    border-radius: 50%;
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+        background-color: var(--white-hov);
+    }
+}

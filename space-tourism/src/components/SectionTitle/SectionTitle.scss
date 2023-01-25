@@ -1,0 +1,7 @@
+@use '../../scss/util' as u;
+
+.section-title {
+    @include u.breakpoint('medium'){
+        text-align: left;
+    }
+}

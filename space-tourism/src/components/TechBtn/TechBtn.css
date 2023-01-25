@@ -1,0 +1,17 @@
+.tech-btn {
+  cursor: pointer;
+  font-weight: 400;
+  font-family: var(--accent-ft);
+  font-size: 1rem;
+  line-height: 1.14625rem;
+  letter-spacing: 1px;
+  padding: 0.6875rem 1rem;
+  color: var(--white);
+  background-color: transparent;
+  border: solid 1px var(--white-hov);
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+.tech-btn:hover {
+  background-color: var(--white-hov);
+}/*# sourceMappingURL=TechBtn.css.map */

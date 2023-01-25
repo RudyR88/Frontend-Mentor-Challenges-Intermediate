@@ -1,0 +1,91 @@
+@use '../../scss/util' as u;
+
+.tech {
+    padding: u.toRem(88) 0 u.toRem(81);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--tech-mobile);
+
+    @include u.breakpoint('medium'){
+        padding-top: u.toRem(136);
+        background: var(--tech-tablet);
+    }
+
+    @include u.breakpoint('large'){
+        padding-top: u.toRem(212);
+        background: var(--tech-desktop);
+    }
+
+    main {
+        text-align: center;
+
+        @include u.breakpoint('large'){
+            text-align: left;
+        }
+
+        h5 {
+            margin-bottom: u.toRem(32);
+
+            @include u.breakpoint('medium'){
+                margin-bottom: u.toRem(60);
+                text-align: left;
+            }
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: u.toRem(56);
+
+            img {
+                display: block;
+                height: u.toRem(170);
+
+                @include u.breakpoint('medium'){
+                    height: u.toRem(310);
+                }
+            }
+
+            &__info {
+                width: u.toRem(327);
+
+                @include u.breakpoint('medium'){
+                    width: u.toRem(458);
+                }
+
+                .controls {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: u.toRem(152);
+                    margin: 0 auto;
+                    margin-bottom: u.toRem(26);
+
+                    @include u.breakpoint('medium'){
+                        margin-bottom: u.toRem(44);
+                    }
+                }
+
+                .eyebrow2 {
+                    margin-bottom: u.toRem(9);
+                    @include u.breakpoint('medium'){
+                        margin-bottom: u.toRem(16);
+                    }
+                }
+
+                h4 {
+                    color: var(--white);
+                    margin-bottom: u.toRem(16);
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

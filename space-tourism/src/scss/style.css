@@ -179,7 +179,23 @@ h5 {
   }
 }
 
-h1, h2, h4, .subheading1, .eyebrow {
+.eyebrow2 {
+  display: block;
+  font-family: var(--acent-ft);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.05rem;
+  letter-spacing: 2.36px;
+}
+@media (min-width: 43.75em) {
+  .eyebrow2 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 2.7px;
+  }
+}
+
+h1, h2, h4, .subheading1, .eyebrow, .eyebrow2 {
   font-family: var(--accent-ft);
 }
 
@@ -211,6 +227,9 @@ h5, .subheading2 {
   --crew-mobile: var(--dark-grd), url("../assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
   --crew-tablet: var(--dark-grd), url("../assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
   --crew-desktop: var(--dark-grd), url("../assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
+  --tech-mobile: var(--dark-grd), url("../assets/technology/background-technology-mobile.jpg") center/cover no-repeat;
+  --tech-tablet: var(--dark-grd), url("../assets/technology/background-technology-tablet.jpg") center/cover no-repeat;
+  --tech-desktop: var(--dark-grd), url("../assets/technology/background-technology-desktop.jpg") center/cover no-repeat;
 }
 
 .container {
